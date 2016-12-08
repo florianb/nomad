@@ -48,7 +48,7 @@ We can register our example job now:
 $ nomad run example.nomad
 ==> Monitoring evaluation "26cfc69e"
     Evaluation triggered by job "example"
-    Allocation "8ba85cef" created: node "171a583b", group "cache"
+    Allocation "dadcdb81" created: node "171a583b", group "cache"
     Evaluation status changed: "pending" -> "complete"
 ==> Evaluation "26cfc69e" finished with status "complete"
 ```
@@ -76,7 +76,7 @@ cache       0       0         1        0       0         0
 
 Allocations
 ID        Eval ID   Node ID   Task Group  Desired  Status   Created At
-dadcdb81  61b0b423  72687b1a  cache       run      running  06/23/16 01:41:13 UTC
+dadcdb81  61b0b423  171a583b  cache       run      running  06/23/16 01:41:13 UTC
 ```
 
 Here we can see that the result of our evaluation was the creation of an
